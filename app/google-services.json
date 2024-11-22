@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522474141252",
+    "project_id": "yoteformoapp",
+    "storage_bucket": "yoteformoapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522474141252:android:82157eb81fa1896462ee11",
+        "android_client_info": {
+          "package_name": "com.sabir.yoteformo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW8614AcnKU0_oWCqoZ0pQ_x1JTA6xYTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

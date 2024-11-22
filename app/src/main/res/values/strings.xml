@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">YoTeFormo</string>
+    <string name="academy_name">Academia de japonés Yo te Formo</string>
+    <string name="app_logo">Academy Logo</string>
+    <string name="welcome_back">ようこそ</string>
+    <string name="sign_in_subtitle">Enter the academy email and password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="forgot_password_description">Enter your email address to reset your password:</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="popular_series">Popular Series</string>
+    <string name="like_series">Like Series</string>
+    <string name="see_all">See All</string>
+</resources>

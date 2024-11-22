@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.YoTeFormo" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+        <style name="App.ActiveIndicator.BottomNavigation" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+            <item name="android:color">@color/brand_teal_20</item>
+        </style>
+        <style name="RoundedImageView" parent="">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">8dp</item>
+        </style>
+
+        <style name="Theme.AppCompat.FullScreen" parent="Theme.AppCompat.NoActionBar">
+            <item name="android:windowNoTitle">true</item>
+            <item name="windowActionBar">false</item>
+            <item name="android:windowFullscreen">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+        </style>
+
+        <style name="Theme.YoTeFormo" parent="Base.Theme.YoTeFormo" />
+    </resources>
