@@ -49,7 +49,7 @@ public class SearchFragment extends Fragment {
 
         seriesList = new ArrayList<>();
         filteredList = new ArrayList<>();
-        seriesAdapter = new SeriesAdapter(filteredList, userId);  // Usa filteredList para el adaptador
+        seriesAdapter = new SeriesAdapter(filteredList, userId);
         rvSeries.setAdapter(seriesAdapter);
 
         svSearch = view.findViewById(R.id.svSearch);
@@ -87,7 +87,6 @@ public class SearchFragment extends Fragment {
         svSearch.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                // No se necesita ninguna acción especial al enviar
                 return false;
             }
 

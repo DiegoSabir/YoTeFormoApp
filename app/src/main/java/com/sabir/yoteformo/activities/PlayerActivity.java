@@ -10,9 +10,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.sabir.yoteformo.R;
@@ -31,7 +29,7 @@ public class PlayerActivity extends AppCompatActivity {
         VIDEO_ID = getIntent().getStringExtra("vid");
         VIDEO_TITLE = getIntent().getStringExtra("title");
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.materialToolBar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(VIDEO_TITLE);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

@@ -20,14 +20,15 @@
             android:layout_height="?attr/actionBarSize"
             android:elevation="0dp"
             app:title="@string/app_name"
-            app:titleTextColor="@color/white">
+            app:titleTextColor="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6">
 
             <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:src="@raw/logo_small"
                 android:layout_gravity="end"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="24dp"
                 android:contentDescription="@string/app_logo"/>
 
         </com.google.android.material.appbar.MaterialToolbar>
@@ -38,7 +39,7 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="90dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -47,8 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/white"
-        android:elevation="8dp"
-        app:itemIconSize="24dp"
+        android:elevation="12dp"
+        app:itemIconSize="28dp"
         app:itemRippleColor="@color/brand_teal_20"
         app:itemActiveIndicatorStyle="@style/App.ActiveIndicator.BottomNavigation"
         app:labelVisibilityMode="labeled"

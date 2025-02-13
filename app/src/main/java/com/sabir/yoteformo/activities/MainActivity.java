@@ -15,7 +15,7 @@ import com.sabir.yoteformo.fragments.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MaterialToolbar toolbar;
+    private MaterialToolbar materialToolBar;
     private BottomNavigationView bnvMenu;
     private String userId;
 
@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        materialToolBar = findViewById(R.id.materialToolBar);
+        setSupportActionBar(materialToolBar);
         getSupportActionBar().setTitle("Meusflis");
 
         bnvMenu = findViewById(R.id.bnvMenu);
@@ -46,23 +46,16 @@ public class MainActivity extends AppCompatActivity {
 
         bnvMenu.setOnNavigationItemSelectedListener(item -> {
             FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
             if (item.getItemId() == R.id.nav_home){
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 homeFragment.setArguments(bundle);
                 fragmentTransaction.replace(R.id.fragment_container, homeFragment).commit();
             }
             else if (item.getItemId() == R.id.nav_search){
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 searchFragment.setArguments(bundle);
                 fragmentTransaction.replace(R.id.fragment_container, searchFragment).commit();
             }
             return true;
         });
-    }
-
-    private void loadFragment(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container, fragment);
-        transaction.commit();
     }
 }

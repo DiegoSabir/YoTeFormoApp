@@ -25,9 +25,7 @@ import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnima
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class HomeFragment extends Fragment {
@@ -54,11 +52,17 @@ public class HomeFragment extends Fragment {
             userId = getArguments().getString("userId");
         }
 
-        setupSlider(view);
-        loadPopularSeries(view);
-        loadLikeSeries(view);
-
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (getView() != null) {
+            setupSlider(getView());
+            loadPopularSeries(getView());
+            loadLikeSeries(getView());
+        }
     }
 
     private void setupSlider(View view) {
@@ -115,7 +119,6 @@ public class HomeFragment extends Fragment {
             }
         });
     }
-
 
     private void loadPopularSeries(View view) {
         DatabaseReference popularReference = database.getReference("series");
